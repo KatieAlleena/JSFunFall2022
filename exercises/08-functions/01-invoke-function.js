@@ -14,3 +14,8 @@ const calculateTotal = (subtotal, tax) => {
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+
+let total = calculateTotal(50,.2)
+
+console.log(total)
+// if we want 60 as the answer, this is 20% rather than 2% tax. It would be 51 with 2% tax instead.

@@ -10,3 +10,9 @@
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+const countNumberOfDigits = (num) => {
+  return num.toString().length;
+};
+
+let digits = countNumberOfDigits(100);
+console.log(digits);
