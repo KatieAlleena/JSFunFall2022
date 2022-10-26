@@ -4,3 +4,6 @@
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+const restaurants = ["Chef of the Wild", "The Noble Canteen", "The Lumpy Pumpkin"]
+
+console.log(restaurants)
