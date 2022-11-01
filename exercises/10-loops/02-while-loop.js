@@ -16,9 +16,17 @@
  * // 100
  */
 
-const logWithWhile = () => {
+const logWithWhile = () => {  
   // WRITE YOUR ANSWER HERE
+  let counter = 10;
+  while (counter <= 100) {
+    console.log(counter);
+    counter = counter + 10;
+    
+  }
 };
+
+console.log(logWithWhile()); 
 
 // IGNORE THIS BELOW. It is for the tests.
 

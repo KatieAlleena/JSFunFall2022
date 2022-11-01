@@ -8,7 +8,10 @@
 
 const arrayLength = (array) => {
   // WRITE YOUR ANSWER HERE
+  return array.length;
 };
+let number = arrayLength
+console.log(number);
 
 // IGNORE THIS BELOW. It is for the tests.
 

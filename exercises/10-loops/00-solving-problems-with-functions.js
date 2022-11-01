@@ -8,8 +8,9 @@
 
 const returnAnswer = (personName) => {
   // WRITE YOUR ANSWER HERE
+  return personName;
 };
-
+returnAnswer("Katie");
 // IGNORE THIS BELOW. It is for the tests.
 
 export default returnAnswer;
