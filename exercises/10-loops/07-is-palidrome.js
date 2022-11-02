@@ -10,8 +10,11 @@
 
 const isPalindrome = (string) => {
   // WRITE YOUR ANSWER HERE
+  let palindrome = string.split("").reverse().join("");
+  return palindrome === string;
 };
 
+console.log(isPalindrome("tacocat"));
 // IGNORE THIS BELOW. It is for the tests.
 
 export default isPalindrome;
