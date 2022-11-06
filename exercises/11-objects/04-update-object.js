@@ -15,3 +15,7 @@ let student = {
  */
 
 // WRITE YOUR ANSWER BELOW THIS LINE
+let {skills} = student
+student.name = "Katie Morton";
+student.skills = [...skills, "DnD Campaign Writer"]
+console.log(student)

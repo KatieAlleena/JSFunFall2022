@@ -19,7 +19,15 @@
 
 const returnObjectValues = (blogPost) => {
   // WRITE YOUR ANSWER HERE
+  return Object.values(blogPost)
 };
+
+const blogPost = {
+  title: "Building a Form Validation API",
+  author: "Mark Marshall",
+  date: "2021-08-05",
+  content: "It's required! Let's learn how to leverage the JavaScript Constraint API to remind your users when they need to finish filling out those pesky form fields. And we will show you how to do this with keeping accessibility in mind. ...", };
+console.log(returnObjectValues(blogPost));
 
 // IGNORE THIS BELOW. It is for the tests.
 

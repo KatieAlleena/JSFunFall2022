@@ -12,8 +12,11 @@
 
 const combineObjects = (obj1, obj2) => {
   // WRITE YOUR ANSWER HERE
+  let newObj = {...obj1, ...obj2}
+  return newObj
 };
 
+console.log(combineObjects)
 // IGNORE THIS BELOW. It is for the tests.
 
 export default combineObjects;
