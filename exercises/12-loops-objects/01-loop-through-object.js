@@ -18,7 +18,21 @@
 
 const generateLinks = (links) => {
   // WRITE YOUR ANSWER HERE
+  let linkList = [];
+  for (let [item, link] of Object.entries(links)) {
+    linkList.push(`<a href="${link}">${item}</a>`);
+    
+  }
+  return linkList.join("")
 };
+
+const links = {
+  Dogs: "http://www.omfgdogs.com",
+  Kittens: "https://giphy.com/search/kitten",
+  "Hamster Dance": "https://hamster.dance/hamsterdance/",
+  };
+
+console.log(generateLinks(links))
 
 // IGNORE THIS BELOW. It is for the tests.
 
