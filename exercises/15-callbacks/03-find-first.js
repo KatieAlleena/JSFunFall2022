@@ -25,7 +25,8 @@
 const findFirst = (arrayOfNum, callback) => {
   // WRITE YOUR ANSWER HERE
   for (let item of arrayOfNum) {
-    if (callback(item)) return item;
+    if (callback(item)) 
+    return item;
   };
 };
 
