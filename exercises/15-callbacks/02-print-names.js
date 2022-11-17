@@ -14,7 +14,7 @@
 
 // WRITE PART 1 OF YOUR ANSWER HERE
 const printer = (name) => {
-  console.log(`* ${name}`);
+  console.log(`~*~ ${name} ~*~`);
 }
 /**
  * PART 2
