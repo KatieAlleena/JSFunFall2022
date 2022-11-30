@@ -27,7 +27,7 @@
     console.log(target)
   });
 
-  const greenCells = document.querySelectorAll('[class="row bg-success text-white"], [id="myRow"], [class="col col-xs border"]');
+  const greenCells = document.querySelectorAll('[class="row bg-success text-white"], [id="myRow"]');
   greenCells.forEach ((cell) => {
     console.log(cell)
   });
