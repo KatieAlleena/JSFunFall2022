@@ -22,7 +22,7 @@
 
   console.log(document.querySelector('[class="btn btn-secondary2"]'))
 
-  const targetSocialMedia = document.querySelectorAll('[class="socialMedia"]');
+  const targetSocialMedia = document.querySelectorAll('[data-social]');
   targetSocialMedia.forEach ((target) => {
     console.log(target)
   });
