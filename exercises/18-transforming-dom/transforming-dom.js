@@ -5,4 +5,19 @@
  */
 (function () {
   // Put your answers in here
+  const img = document.querySelector("img")
+  img.src = "https://media.giphy.com/media/3oKIPnAiaMCws8nOsE/giphy.gif"
+
+  const mozillaLink = document.querySelector(".mozillaLink")
+  mozillaLink.href = "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+
+  const victory = document.querySelector('[class="alert alert-success"]')
+  victory.textContent = "I am victorious!"
+
+  const colorChange1 = document.querySelector('[class="alert alert-info"]')
+  colorChange1.style.backgroundColor = "teal"
+
+  const classChange = document.querySelector('[class="alert alert-danger"]')
+  classChange.class = "p-3 mb-2 bg-info text-white"
+  // I don't understand this yet & will continue to work on it later. 
 })();
