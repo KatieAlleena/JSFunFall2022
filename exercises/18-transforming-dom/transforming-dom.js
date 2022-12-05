@@ -17,7 +17,7 @@
   const colorChange1 = document.querySelector('[class="alert alert-info"]')
   colorChange1.style.backgroundColor = "teal"
 
-  const classChange = document.querySelector('[class="alert alert-danger"]')
-  classChange.class = "p-3 mb-2 bg-info text-white"
-  // I don't understand this yet & will continue to work on it later. 
+  const classChange = document.querySelector('[class="alert alert-danger2"]')
+  classChange.className = "p-3 mb-2 bg-info text-white"
+  
 })();
