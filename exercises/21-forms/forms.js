@@ -10,6 +10,11 @@
    * it should display what the user is typing in the <div></div> tags below.
    */
   // Write your answer here
+  document.querySelector("#someText").addEventListener("input", event => {
+    const typed = event.target.value;
+    document.querySelector("#displaySomeText").textContent = typed;
+
+  });
   /**
    * Problem 2: Display the results of the world's most pointless search engine.
    *
@@ -23,6 +28,14 @@
    * and you must prevent the page from refreshing when the form is submitted.
    */
   // Write your answer here
+  document.querySelector("#oceanForm").addEventListener("submit", event => {
+    event.preventDefault();
+    
+    const searchOceans = document.querySelector("#searchOceans");
+
+    const oceanResults = document.querySelector("#oceanResults");
+    oceanResults.textContent = `Sorry. There were no results for "${searchOceans.value}" found.`;
+  });
   /**
    * Problem 3: Agree to the terms and conditions
    *
@@ -34,4 +47,54 @@
    * To start, you will need to hide some element on the page and change the input's classes.
    */
   // Write your answer here
+  document.querySelector("#form1").addEventListener("submit", event => {
+
+    event.preventDefault();
+
+    const terms = document.querySelector("#terms");
+
+    const agreementError = document.querySelector("#agreementError");
+
+    const agreementSuccess = document.querySelector("#agreementSuccess");
+
+    const showAgreementError = () => {
+      if (!terms.classList.contains("is-invalid")) {
+
+        terms.classList.add("is-invalid");
+
+      }
+
+      if (!agreementSuccess.classList.contains("hidden")) {
+
+        agreementSuccess.classList.add("hidden");
+
+      }
+
+      if (agreementError.classList.contains("hidden")) {
+        agreementError.classList.remove("hidden");
+      }
+    };
+
+    const showAgreementSuccess = () => {
+  
+      if (terms.classList.contains("is-invalid")) {
+        terms.classList.remove("is-invalid");
+      }
+
+      if (agreementSuccess.classList.contains("hidden")) {
+        agreementSuccess.classList.remove("hidden");
+      }
+
+      if (!agreementError.classList.contains("hidden")) {
+        agreementError.classList.add("hidden");
+      }
+    };
+
+    const checkbox = document.querySelector("#terms");
+    if (checkbox.checked) showAgreementSuccess();
+    else showAgreementError();
+
+    // this isn't working yet, sorry. Will work on it soon.
+  });
+
 })();
