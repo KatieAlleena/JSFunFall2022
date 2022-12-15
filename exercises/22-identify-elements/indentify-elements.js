@@ -13,4 +13,47 @@
    * You can also make the "x" icon dismiss the notification.
    */
   // Write your answer here
+  const buttonCommunity = document.querySelector('#selectCommunity')
+  const buttonProfessional = document.querySelector('#selectProfessional')
+  const buttonEnterprise = document.querySelector('#selectEnterprise')
+  const notification = document.querySelector('#notification')
+  const note = document.querySelector('#note')
+  const close = document.querySelector('#close')
+  const dismiss = () => {
+    notification.style.display = 'none'
+  }
+
+  buttonCommunity.addEventListener("click", () => {
+    if (notification.classList.contains('hidden')) {
+      notification.classList.remove('hidden')
+      note.textContent = "Thanks for choosing the Community plan!"
+    }
+    
+
+  });
+
+  buttonProfessional.addEventListener("click", () => {
+    if (notification.classList.contains('hidden')) {
+      notification.classList.remove('hidden')
+      note.textContent = "Thanks for choosing the Professional plan!"
+    }
+    
+
+  });
+
+  buttonEnterprise.addEventListener("click", () => {
+    if (notification.classList.contains('hidden')) {
+      notification.classList.remove('hidden')
+      note.textContent = "Thanks for choosing the Enterprise plan!"
+    }
+    
+
+  });
+
+  if (notification.classList.contains('hidden')) {
+    close.addEventListener("click", (dismiss));
+    
+  }
+
+  /* confused as to how to make each button clickable, but... each time the page refreshes each of these work once... lol */
 })();

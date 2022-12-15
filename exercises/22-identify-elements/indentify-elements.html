@@ -16,10 +16,11 @@
   <body>
     <!-- Hide me before the user selects a plan -->
     <!-- I put an ID for the notification here -->
-    <div class="notification is-primary">
-      <button class="delete"></button>
+    <div id="notification" class="notification is-primary hidden">
+      <p id="note"></p>
       <!-- When the user selects a plan, put a success message here. For example: -->
       <!-- Thank you for purchasing the Enterprise plan! -->
+      <button id="close" class="delete"></button>
       <span id="notification"></span>
     </div>
 
@@ -40,7 +41,7 @@
         </div>
         <div class="plan-footer">
           <!-- Clicking on this button should show a "Thank You" notification above -->
-          <button class="button is-fullwidth">Select</button>
+          <button id="selectCommunity" class="button is-fullwidth">Select</button>
         </div>
       </div>
 
@@ -59,7 +60,7 @@
         </div>
         <div class="plan-footer">
           <!-- Clicking on this button should show a "Thank You" notification above -->
-          <button class="button is-fullwidth">Select</button>
+          <button id="selectProfessional" class="button is-fullwidth">Select</button>
         </div>
       </div>
 
@@ -77,7 +78,7 @@
           <div class="plan-item">1000 Email Boxes</div>
         </div>
         <div class="plan-footer">
-          <button class="button is-fullwidth">Select</button>
+          <button id="selectEnterprise" class="button is-fullwidth">Select</button>
         </div>
       </div>
     </div>

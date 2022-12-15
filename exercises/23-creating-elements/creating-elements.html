@@ -31,8 +31,26 @@
       @see https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link for external files
       @see https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style for <style> tags
     -->
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  />
+  <script src="/exercises/23-creating-elements/script.js"></script>
+
+  <style>
+    .hidden {
+      display: none;
+    }
+  </style>
+  
   </head>
   <body>
     <!-- Put your HTML here -->
+    <div class="container mt-2 mb-2">
+      <button type="button" id="button" class="btn btn-primary">Show Link</button>
+    </div>
+    <div id="link" class="hidden">
+    <img src="https://assets.reedpopcdn.com/BOTW-Mem.jpg/BROK/resize/690%3E/format/jpg/quality/75/BOTW-Mem.jpg">
+    </div>
   </body>
 </html>
