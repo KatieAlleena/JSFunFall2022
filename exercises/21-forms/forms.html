@@ -27,6 +27,9 @@
       body {
         height: 100vh;
       }
+      .hidden {
+        display: none;
+      }
     </style>
 
     <script src="forms.js" defer></script>
@@ -78,7 +81,7 @@
           <div class="form-inline">
             <div class="form-check form-check-inline">
               <!-- The "is-invalid" class here makes the "I Agree ..." red. The input should only have this class if the user did not agree to the terms and conditions -->
-              <input class="form-check-input is-invalid" type="checkbox" id="terms" />
+              <input class="form-check-input" type="checkbox" id="terms" />
               <label class="form-check-label" for="terms"
                 >I Agree to the Terms and Conditions</label
               >
@@ -88,12 +91,12 @@
           </div>
 
           <!-- Only display me if the user did not agree to the terms and conditions -->
-          <div class="text-danger" id="agreementError">
+          <div class="text-danger hidden" id="agreementError">
             <small>You must agree to the terms and conditions</small>
           </div>
 
           <!-- Only display after the user clicks on the "Continue" button and he has agreed to the terms -->
-          <div class="text-success" id="agreementSuccess">
+          <div class="text-success hidden" id="agreementSuccess">
             <small>Thank you for signing up!</small>
           </div>
         </form>
