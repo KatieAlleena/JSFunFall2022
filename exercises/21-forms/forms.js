@@ -91,9 +91,11 @@
     };
 
     const checkbox = document.querySelector("#terms");
-    if (checkbox.checked) showAgreementSuccess();
-    else showAgreementError();
-
+    if (checkbox.checked) {
+      showAgreementSuccess();
+    } else {
+      showAgreementError();
+    }
     // this isn't working yet, sorry. Will work on it soon.
   });
 
