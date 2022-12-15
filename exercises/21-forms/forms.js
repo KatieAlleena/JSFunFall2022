@@ -96,7 +96,6 @@
     } else {
       showAgreementError();
     }
-    // this isn't working yet, sorry. Will work on it soon.
   });
 
 })();
