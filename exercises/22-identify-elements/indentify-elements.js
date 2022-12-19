@@ -23,6 +23,8 @@
     notification.style.display = 'none'
   }
 
+  
+
   buttonCommunity.addEventListener("click", () => {
     if (notification.classList.contains('hidden')) {
       notification.classList.remove('hidden')
