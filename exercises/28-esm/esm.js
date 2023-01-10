@@ -1,3 +1,5 @@
+import greet from "./greet.js";
+import { multiply } from "./multiply.js";
 /**
  * The next two exercises uses ES modules (ESM).
  * ES modules allow you break up your code into multiple files (or modules), and then share code between different files.
@@ -22,7 +24,7 @@ const greet = (name) => {
  * @see https://developer.mozilla.org/en-US/docs/web/javascript/reference/statements/export
  */
 // Put your answer here
-
+greet("Katie");
 /**
  * Problem 2: Named Exports
  * You are going to follow the same steps,
@@ -38,7 +40,7 @@ const multiply = (a, b) => {
  * 4. Import the function at the top of this file using the name "multiply"
  */
 // Put your answer here
-
+multiply(5,5);
 /**
  * Ignore me below. This is for the tests.
  */
